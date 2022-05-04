@@ -8,26 +8,26 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from lemonadep device
-$(call inherit-product, device/oneplus/lemonadep/device.mk)
+# Inherit from negroni device
+$(call inherit-product, device/oneplus/negroni/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_lemonadep
-PRODUCT_DEVICE := lemonadep
+PRODUCT_NAME := lineage_negroni
+PRODUCT_DEVICE := negroni
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
-PRODUCT_MODEL := LE2125
+PRODUCT_MODEL := NE2215
 
-PRODUCT_SYSTEM_NAME := OnePlus9Pro
-PRODUCT_SYSTEM_DEVICE := OnePlus9Pro
+PRODUCT_SYSTEM_NAME := NE2215
+PRODUCT_SYSTEM_DEVICE := OP516FL1
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="OnePlus9Pro-user 12 RKQ1.211119.001 R.202210251512 release-keys" \
+    PRIVATE_BUILD_DESC="NE2215-user 12 SKQ1.211119.001 S.202206230228 release-keys" \
     TARGET_DEVICE=$(PRODUCT_SYSTEM_DEVICE) \
     TARGET_PRODUCT=$(PRODUCT_SYSTEM_NAME)
 
-BUILD_FINGERPRINT := OnePlus/OnePlus9Pro/OnePlus9Pro:12/RKQ1.211119.001/R.202210251512:user/release-keys
+BUILD_FINGERPRINT := OnePlus/NE2215/OP516FL1:12/SKQ1.211019.001/S.GDPR.202206230228:user/release-keys
