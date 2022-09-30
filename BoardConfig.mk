@@ -12,6 +12,11 @@ DEVICE_PATH := device/oneplus/negroni
 # Display
 TARGET_SCREEN_DENSITY := 450
 
+# Kernel
+BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(DEVICE_PATH)/modules.blocklist
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load))
+TARGET_KERNEL_SOURCE := kernel/oneplus/sm8450
+
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
