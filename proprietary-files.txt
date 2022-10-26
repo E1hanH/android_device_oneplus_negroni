@@ -1,14 +1,20 @@
 # All proprietary files from this list, unless pinned and noted otherwise,
-# are from OnePlus 10 Pro (NE2213_11.A.15).
+# are from OnePlus 10 Pro (NE2215_11.C.19).
 
 # ACDB
 odm/etc/acdbdata/Audio_Parameter_Version.txt
 
 # ADSP modules
-odm/lib/rfsa/adsp/aiboost/libQnnHtpAltPrepV69Skel.so
-odm/lib/rfsa/adsp/QNN_lib/libQnnHtpAltPrepV69Skel.so
+odm/lib/rfsa/adsp/aiboost/libQnnHtpV69Skel.so
+odm/lib/rfsa/adsp/libQnnHtpAltPrepV69Skel.so
 odm/lib/rfsa/adsp/libarcsoft_portraitsn_hvx_skel.so
-vendor/lib/rfsa/adsp/libQnnHtpAltPrepV69Skel.so
+vendor/lib/rfsa/adsp/libVppFrcQnnHtp.so
+vendor/lib/rfsa/adsp/libVppQnnHtp.so
+vendor/lib/rfsa/adsp/libmobilenet_dsp_frc_networks.so
+vendor/lib/rfsa/adsp/libmobilenet_dsp_frc.so
+vendor/lib/rfsa/adsp/libvpp_ais_networks.so
+vendor/lib/rfsa/adsp/libvpp_vqa_networks.so
+vendor/lib/rfsa/adsp/libvpt_action_recognition.so
 
 # Audio firmware
 odm/firmware/tfa98xx.cnt
@@ -40,14 +46,6 @@ odm/etc/lvacfs_params/2mic/LVACFS_Parameter_ID6_MIC_Fast.txt
 odm/etc/lvacfs_params/2mic/LVACFS_Parameter_ID7_MIC_Interview.txt
 odm/etc/lvacfs_params/2mic/LVACFS_Parameter_ID8_MIC_Unprocess.txt
 odm/etc/lvacfs_params/2mic/LVACFS_Parameter_ID9_MIC_Voice.txt
-odm/etc/lvacfs_params/3mic/audiozoom_1.txt
-odm/etc/lvacfs_params/3mic/audiozoom_2.txt
-odm/etc/lvacfs_params/3mic/audiozoom_3.txt
-odm/etc/lvacfs_params/3mic/LVACFS_Calibration360_3mic.dat
-odm/etc/lvacfs_params/3mic/LVACFS_Configuration.txt
-odm/etc/lvacfs_params/3mic/LVACFS_Parameter_3mic_surround.txt
-odm/etc/lvacfs_params/3mic/LVACFS_Parameter_3mic_track.txt
-odm/etc/lvacfs_params/3mic/LVACFS_Parameter_3mic_zoom.txt
 
 # Camera
 odm/etc/camera/config/camera_unit_config
@@ -100,8 +98,6 @@ odm/lib64/libarcsoft_hdr_denoise_api_v4.so
 odm/lib64/libarcsoft_low_light_hdr_for_neon.so
 odm/lib64/libml_util.so
 odm/lib64/libsnpeml.so
-vendor/lib64/vendor.qti.hardware.camera.cameraextension@1.0-service-impl.so
-vendor/lib64/vendor.qti.hardware.camera.cameraextension@1.0.so
 
 # Fingerprint
 odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service
@@ -120,16 +116,11 @@ odm/vendor/firmware/goodixfp.b07
 odm/vendor/firmware/goodixfp.mdt
 
 # GNSS
-vendor/lib64/vendor.qti.gnss@1.0.so
-vendor/lib64/vendor.qti.gnss@1.1.so
-vendor/lib64/vendor.qti.gnss@1.2.so
-vendor/lib64/vendor.qti.gnss@2.0.so
-vendor/lib64/vendor.qti.gnss@2.1.so
-vendor/lib64/vendor.qti.gnss@3.0.so
+vendor/lib64/vendor.qti.gnss-V1-ndk_platform.so
+vendor/lib64/vendor.qti.gnss-service.so
 
 # IMS
-vendor/lib64/lib-imsSDP.so
-vendor/lib64/vendor.qti.hardware.radio.ims-V3-ndk_platform.so
+vendor/lib64/vendor.qti.hardware.radio.ims-V6-ndk_platform.so
 
 # Iris
 odm/bin/hw/vendor.pixelworks.hardware.display.iris-service
@@ -167,22 +158,6 @@ odm/lib64/libpwiriscalibrate.so
 odm/lib64/libpwirisservice.so
 odm/lib64/libpwirissoft.so
 odm/lib64/libpwsoftirisPCS.so
-
-# Neural networks
-odm/lib64/QNN_lib/libQnnHtpAltPrepV69Stub.so
-vendor/bin/hw/android.hardware.neuralnetworks-shim-service-qti
-vendor/etc/init/android.hardware.neuralnetworks-shim-service-qti.rc
-vendor/etc/vintf/manifest/android.hardware.neuralnetworks-shim-service-qti.xml
-vendor/lib64/libQnnHtpAltPrepV69Stub.so
-vendor/lib64/libUnnhalAccCommon.so
-vendor/lib64/libUnnhalAccGpu.so
-vendor/lib64/libUnnhalAccHtp.so
-
-# Perf
-vendor/etc/task_profiles.json
-
-# RIL
-vendor/lib64/vendor.qti.hardware.radio.qtiradio-V2-ndk_platform.so
 
 # Sensors
 odm/etc/sensor/config/waipio_qrd_ak0991x.json
