@@ -53,7 +53,6 @@ qnoc-waipio.ko
 qti-fixed-regulator.ko
 reboot-mode.ko
 msm_geni_serial.ko
-ns.ko
 nvmem_qcom-spmi-sdam.ko
 phy-generic.ko
 phy-qcom-ufs.ko
@@ -109,7 +108,6 @@ cdt_integrity.ko
 shutdown_speed.ko
 oplus_project.ko
 boot_mode.ko
-horae_shell_temp.ko
 oplus_bsp_sched_assist.ko
 oplus_bsp_frame_boost.ko
 cpu_jankinfo.ko
@@ -121,6 +119,7 @@ shutdown_detect.ko
 bootloader_log.ko
 oplus_pmicwd.ko
 qpnp-power-on.ko
+oplus_saupwk.ko
 saupwk.ko
 kernel_fb.ko
 cpufreq_bouncing.ko
@@ -131,5 +130,8 @@ qcom_rimps.ko
 c1dcvs_vendor.ko
 c1dcvs_scmi.ko
 oplus_mdmfeature.ko
-oplus_bsp_atd.ko
 bcl_pmic5.ko
+nfc_i2c.ko
+oplus_bsp_task_sched.ko
+oplus_mdmrst.ko
+task_overload.ko

@@ -1,5 +1,5 @@
 # All proprietary files from this list, unless pinned and noted otherwise,
-# are from OnePlus 10 Pro (NE2213_11.C.30).
+# are from OnePlus 10 Pro (NE2213_13.1.0.521(EX01)).
 
 # ACDB
 odm/etc/acdbdata/Audio_Parameter_Version.txt
@@ -56,9 +56,6 @@ odm/etc/camera/config/oplus_camera_config
 odm/etc/camera/config/ov08a10
 odm/etc/camera/config/s5kjn1sq03
 odm/etc/camera/filters_lut/Delta400.3dl.rgb.bin
-odm/etc/camera/filters_lut/Emerald.cube.rgb.bin
-odm/etc/camera/filters_lut/Radiance.cube.rgb.bin
-odm/etc/camera/filters_lut/Serenity.cube.rgb.bin
 odm/etc/camera/filters_lut/gt-24hour-city.cube.rgb.bin
 odm/etc/camera/filters_lut/gt-3dcity.cube.rgb.bin
 odm/etc/camera/filters_lut/gt-after-glow.cube.rgb.bin
@@ -114,13 +111,6 @@ odm/vendor/firmware/goodixfp.b05
 odm/vendor/firmware/goodixfp.b06
 odm/vendor/firmware/goodixfp.b07
 odm/vendor/firmware/goodixfp.mdt
-
-# GNSS
-vendor/lib64/vendor.qti.gnss-V1-ndk_platform.so
-vendor/lib64/vendor.qti.gnss-service.so
-
-# IMS
-vendor/lib64/vendor.qti.hardware.radio.ims-V6-ndk_platform.so
 
 # Iris
 odm/bin/hw/vendor.pixelworks.hardware.display.iris-service
